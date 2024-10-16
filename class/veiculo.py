@@ -40,6 +40,14 @@ class Veiculo:
     def valor_diario(self, valor_diario):
         self.__valor_diario = valor_diario
 
+<<<<<<< HEAD
+    def calcular_aluguel(self, dias, desconto=0):
+        valor_total = self.__valor_diario * dias
+        if desconto:
+            valor_total -= desconto
+        return valor_total
+
+=======
     def calcular_valor_aluguel(self, dias, desconto=0):
         total = self.__valor_diario * dias
         total -= total * desconto
@@ -53,6 +61,7 @@ class Veiculo:
     def aplicar_aumento(cls, percentual):
         raise NotImplementedError("Implementar nas subclasses")
     
+>>>>>>>>> Temporary merge branch 2
     def __str__(self):
         return f'{self.marca} {self.modelo} {self.ano} {self.valor_diario}'
 

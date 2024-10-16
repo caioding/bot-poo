@@ -1,3 +1,5 @@
+from. veiculo import Veiculo
+
 class Carro(Veiculo):
     def __init__(self, nome, marca, modelo, ano, valor_diario, tipo_combustivel):
         super().__init__(nome, marca, modelo, ano, valor_diario)
