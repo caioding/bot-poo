@@ -37,5 +37,22 @@ class Veiculo:
     def valor_diario(self, valor_diario):
         self.__valor_diario = valor_diario
 
+    def calcular_aluguel(self, dias, desconto=0):
+        valor_total = self.__valor_diario * dias
+        if desconto:
+            valor_total -= desconto
+        return valor_total
+
     def __str__(self):
         return f'{self.marca} {self.modelo} {self.ano} {self.valor_diario}'
+
+
+
+
+
+
+
+
+
+
+
