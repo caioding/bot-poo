@@ -15,7 +15,7 @@ class Veiculo:
     @marca.setter
     def marca(self, marca):
         self.__marca = marca
-    
+
     @property
     def modelo(self):
         return self.__modelo
@@ -29,7 +29,7 @@ class Veiculo:
         return self.__ano
 
     @ano.setter
-    def ano(self, ano): 
+    def ano(self, ano):
         self.__ano = ano
 
     @property
