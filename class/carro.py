@@ -8,8 +8,11 @@ class Carro(Veiculo):
         return self.__tipo_combustivel
     
     @tipo_combustivel.setter
-    def tipo_combustivel(self):
-        self.__tipo_combustivel
+    def tipo_combustivel(self, tipo_combustivel):
+        self.__tipo_combustivel = tipo_combustivel
 
-  
-    #### Aguardando método de calcular aluguel na class Veiculo
+    def calcular_valor_aluguel(self, dias, desconto=0):
+        total = super().calcular_valor_aluguel(dias, desconto)
+        if dias > 7:
+            total *= 0.9 # Valor total deduzido os 10%
+        return total
