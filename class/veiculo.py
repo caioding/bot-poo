@@ -1,9 +1,9 @@
 class Veiculo:
     def __init__(self, marca, modelo, ano, valor_diario):
-        self.marca = marca
-        self.modelo = modelo
-        self.ano = ano
-        self.valor_diario = valor_diario
+        self.__marca = marca
+        self.__modelo = modelo
+        self.__ano = ano
+        self.__valor_diario = valor_diario
 
     @property
     def marca(self):
@@ -12,7 +12,7 @@ class Veiculo:
     @marca.setter
     def marca(self, marca):
         self.__marca = marca
-    
+
     @property
     def modelo(self):
         return self.__modelo
@@ -26,7 +26,7 @@ class Veiculo:
         return self.__ano
 
     @ano.setter
-    def ano(self, ano): 
+    def ano(self, ano):
         self.__ano = ano
 
     @property
