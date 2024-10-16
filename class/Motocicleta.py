@@ -12,8 +12,11 @@ class Motocicleta(Veiculo):
     def cilindrada(self, cilindrada):
         self.__cilindrada = cilindrada
 
-    def calcular_aluguel(self, dias, desconto=None):
-        total = super().calcular_aluguel(dias, desconto)  # Chama o método da classe mãe
+    def calcular_valor_aluguel(self, dias, desconto=None):
+        if desconto:
+            total = super().calcular_valor_aluguel(dias, desconto)  # Chama o método da classe mãe
+        else:
+            total = super().calcular_valor_aluguel(dias)
         if self.__cilindrada > 200:  
             total += total * 0.1 
         return total
