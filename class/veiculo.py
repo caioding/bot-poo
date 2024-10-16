@@ -36,4 +36,6 @@ class Veiculo:
     @valor_diario.setter
     def valor_diario(self, valor_diario):
         self.__valor_diario = valor_diario
-        
+
+    def __str__(self):
+        return f'{self.marca} {self.modelo} {self.ano} {self.valor_diario}'
