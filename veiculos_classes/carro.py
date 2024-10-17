@@ -17,4 +17,6 @@ class Carro(Veiculo):
         total = super().calcular_valor_aluguel(dias, desconto)
         if dias > 7:
             total = total - (total * (10/100))
-        return total
+            return f"Valor do aluguel do carro por {dias:.0f} dias com desconto pós 7 dias: R${total:.2f}"
+        else:
+            return f"Valor do aluguel do carro por {dias:.0f} dias: R${total:.2f}"
