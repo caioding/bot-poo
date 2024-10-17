@@ -1,5 +1,3 @@
-# main.py
-
 # Importa as classes do pacote 'veiculos_classes'
 from veiculos_classes import Veiculo, Carro, Motocicleta
 
