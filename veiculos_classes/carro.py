@@ -16,5 +16,5 @@ class Carro(Veiculo):
     def calcular_valor_aluguel(self, dias, desconto=0):
         total = super().calcular_valor_aluguel(dias, desconto)
         if dias > 7:
-            total *= 0.9 # Valor total deduzido os 10%
+            total = total - (total * (10/100))
         return total
