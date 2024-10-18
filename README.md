@@ -1,21 +1,26 @@
 # Sistema de Veículos usando BotCity com Programação Orientada a Objetos
 
-Este projeto utiliza o conceito de orientação a objetos em _Python_ e uma _API_ _Flask_ para gerenciar um sistema de aluguel de veículos (carros e motocicletas). São utilizadas diferentes rotas em cada template para instanciar um objeto das classes Carro ou Motocicleta ao utilizar o _submit_ do formulário _HTML_. Ao final da execução, os objetos estarão em um arquivo txt e na própria aplicação _Flask_.
+Projeto utilizando _Flask_, API e Botcity para automatizar o aluguel de veículos e usando um arquivo .txt para salvar os dados.
 
 ## Pré-requisitos
 - Ter o _Python_ 3.10 ou superior instalado na máquina
 
 ## Execução
- 1. Criar ambiente virtual e instalar o _requiriments_:
+ 1. Criar ambiente virtual:
   ```
   python -m venv venv
-  . venv/bin/activate (Linux)
-  . venv/Scripts/Activate (Windows)
-  
+  ```
+ 2. Ativar o ambiente virtual:
+  ```
+  venv/bin/activate (Linux)
+  venv/Scripts/Activate (Windows)
+  ```
+ 3. Instarar o _requiriments_:
+  ```
   (venv) pip install -r requirements.txt
   ```
 
- Abrir dois terminais para executar a API e o Bot:
+ 4. Abrir dois terminais para executar tanto a API quanto o Bot:
   - API:
     ```
     python app.py 
