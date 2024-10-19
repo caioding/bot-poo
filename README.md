@@ -1,6 +1,6 @@
 # Sistema de Veículos usando BotCity com Programação Orientada a Objetos
 
-Projeto utilizando _Flask_, API e Botcity para automatizar o aluguel de veículos e usando um arquivo .txt para salvar os dados.
+Projeto utilizando _Flask_, API e Botcity para automatizar o aluguel de veículos usando um arquivo .txt para salvar os dados.
 
 ## Pré-requisitos
 - Ter o _Python_ 3.10 ou superior instalado na máquina
