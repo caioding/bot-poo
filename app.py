@@ -26,15 +26,15 @@ def ler_dados():
 def index():
     return render_template('index.html')
 
-@app.route('/alugar_carros')
+@app.route('/alugar_carro')
 def alugar_carros():
     return render_template('carro.html')
 
-@app.route('/alugar_motos')
+@app.route('/alugar_moto')
 def alugar_motos():
     return render_template('moto.html')
 
-@app.route('/listar_veiculos')
+@app.route('/veiculos_alugados')
 def listar_veiculos():
     dados = ler_dados()
     return render_template('veiculos.html', dados=dados)

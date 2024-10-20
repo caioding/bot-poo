@@ -77,7 +77,7 @@ def inserir_forms(bot:WebBot, carros: int, motos: int):
     for _ in range(carros):
         bot.browse('http://127.0.0.1:5000')
         bot.wait(500)
-        alugar_carros = bot.find_element('/html/body/main/div/div[1]/div/div/a', By.XPATH) 
+        alugar_carros = bot.find_element('/html/body/div/div/div[1]/div/div/div/button', By.XPATH) 
         alugar_carros.click()
         bot.wait(500)
         nome, ano, diaria, combustivel = inventar_carros()
@@ -92,7 +92,7 @@ def inserir_forms(bot:WebBot, carros: int, motos: int):
     for _ in range(motos):
         bot.browse('http://127.0.0.1:5000')
         bot.wait(500)
-        alugar_motos = bot.find_element('/html/body/main/div/div[2]/div/div/a', By.XPATH)
+        alugar_motos = bot.find_element('/html/body/div/div/div[2]/div/div/div/button', By.XPATH)
         alugar_motos.click()
         bot.wait(500)
         nome, ano, diaria, cilindrada = inventar_motos()
