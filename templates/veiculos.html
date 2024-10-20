@@ -7,6 +7,26 @@
     <title>DX Motor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .btn-secondary {
+            background-color: #FFC5C5;
+            border-color: #FFC5C5;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background-color: #FFB6B6;
+            border-color: #FFB6B6;
+        }
+
+        .btn-secondary:active,
+        .btn-secondary:focus,
+        .btn-secondary:focus-visible {
+            background-color: #FFB6B6 !important;
+            border-color: #FFB6B6 !important;
+            box-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,20 +51,20 @@
                         <a class="nav-link" href="moto.html">Alugar moto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="veiculos.html">Veiculos alugados</a>
+                        <a class="nav-link" href="veiculos.html">Veículos alugados</a>
                     </li>
                 </ul>
-                <button class="btn btn-secondary d-flex" type="submit">Sair</button>
+                <button class="btn btn-dark d-flex" type="submit" onclick="window.location.href='login.html'">Sair</button>
             </div>
         </div>
     </nav>
     <!-- navbar -->
     <!-- Tabela -->
     <header class="text-center my-4">
-        <h1>Veiculos alugados</h1>
+        <h1>Veículos alugados</h1>
     </header>
-    <main class="container">
-        <table class="table table-custom">
+    <main class="container w-50">
+        <table class="table table-custom mx-auto">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -72,11 +92,11 @@
         </table>
     </main>
     <div class="text-center mt-4">
-        <a href="index.html" class="btn btn-secondary">Voltar para o início</a>
+        <a href="/" class="btn btn-secondary">Voltar para o início</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
