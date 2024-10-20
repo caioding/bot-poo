@@ -43,7 +43,7 @@ def extrari_dados(form_veiculo: dict):
         combustivel = form_veiculo['combustivel']
         carro = instanciar_carro(nome, ano, diaria, combustivel)
         id = Veiculo.quant_veiculos
-        linha = f'{id},{carro.nome},{carro.ano},{carro.diaria},{carro.__class__.__name__},{carro.combustivel}, \n'
+        linha = f'{id},{carro.nome},{carro.ano},{carro.diaria},{carro.__class__.__name__},{carro.combustivel},\n'
         print(linha)
 
     elif 'cilindrada' in form_veiculo:
