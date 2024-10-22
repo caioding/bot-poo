@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from bot_test.bot import extrari_dados
+from bot_veiculos.bot import extrari_dados
 
 app = Flask(__name__)
 
