@@ -17,9 +17,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from faker import Faker
 
 # Classes import
-from classes.veiculo import Veiculo
-from classes.carro import Carro
-from classes.motocicleta import Motocicleta
+from models.veiculo import Veiculo
+from models.carro import Carro
+from models.motocicleta import Motocicleta
 
 # Disable errors if we are not connected to Maestro
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
